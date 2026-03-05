@@ -1,6 +1,6 @@
 <?php
 
-$encodeString = "aHR0cHM6Ly9mZXRjaC5kYXRhLXNlYXJjaC53b3JrZXJzLmRldi8/dXJsPWh0dHAlM0ElMkYlMkZ3d3cucGxleC50diUyRndwLWpzb24lMkZwbGV4JTJGdjElMkZtZWRpYXZlcnNlJTJGbGl2ZXR2JTJGY2hhbm5lbHMlMkZsaXN0JnJlZmVyZXI9aHR0cHMlM0ElMkYlMkZ3d3cucGxleC50diUyRmxpdmUtdHYtY2hhbm5lbHMlMkY=";
+$encodeString = "aHR0cHM6Ly9wbGV4LWZldGNoLmtvYm9kYWlzaGlzYW1hLndvcmtlcnMuZGV2Lz91cmw9aHR0cCUzQSUyRiUyRnd3dy5wbGV4LnR2JTJGd3AtanNvbiUyRnBsZXglMkZ2MSUyRm1lZGlhdmVyc2UlMkZsaXZldHYlMkZjaGFubmVscyUyRmxpc3QmcmVmZXJlcj1odHRwcyUzQSUyRiUyRnd3dy5wbGV4LnR2JTJGbGl2ZS10di1jaGFubmVscyUyRg==";
 $url = base64_decode($encodeString);
 
 $response = file_get_contents($url);
@@ -35,3 +35,4 @@ if (file_put_contents($filePath, $jsonOutput)) {
     echo "Failed to save file.";
 }
 ?>
+
